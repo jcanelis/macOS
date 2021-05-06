@@ -8,9 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var isShowing = true
+    @State private var fullText: String = "This is some editable text..."
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            SwitchView()
+            GridView()
+                .padding()
+                .toolbar {
+                    ToolbarItem(placement: .automatic) {
+                        Button {
+                            
+                        } label: {
+                            Image(systemName: "archivebox")
+                        }
+                    }
+                    
+                    ToolbarItem(placement: .automatic) {
+                        Spacer()
+                    }
+                }
+            
+            VStack {
+                Text("Wow")
+            }
+        }
     }
 }
 

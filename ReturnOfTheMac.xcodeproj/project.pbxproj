@@ -13,6 +13,8 @@
 		0BCD53A92643AE8100F6AE15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BCD53A82643AE8100F6AE15 /* Preview Assets.xcassets */; };
 		0BCD53B52643AE8100F6AE15 /* ReturnOfTheMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCD53B42643AE8100F6AE15 /* ReturnOfTheMacTests.swift */; };
 		0BCD53C02643AE8100F6AE15 /* ReturnOfTheMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCD53BF2643AE8100F6AE15 /* ReturnOfTheMacUITests.swift */; };
+		0BCD53CE2643B2EC00F6AE15 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCD53CD2643B2EC00F6AE15 /* GridView.swift */; };
+		0BCD53D02643B50A00F6AE15 /* SwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCD53CF2643B50A00F6AE15 /* SwitchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		0BCD53BB2643AE8100F6AE15 /* ReturnOfTheMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReturnOfTheMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BCD53BF2643AE8100F6AE15 /* ReturnOfTheMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnOfTheMacUITests.swift; sourceTree = "<group>"; };
 		0BCD53C12643AE8100F6AE15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BCD53CD2643B2EC00F6AE15 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		0BCD53CF2643B50A00F6AE15 /* SwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 			children = (
 				0BCD53A12643AE8000F6AE15 /* ReturnOfTheMacApp.swift */,
 				0BCD53A32643AE8000F6AE15 /* ContentView.swift */,
+				0BCD53CF2643B50A00F6AE15 /* SwitchView.swift */,
+				0BCD53CD2643B2EC00F6AE15 /* GridView.swift */,
 				0BCD53A52643AE8100F6AE15 /* Assets.xcassets */,
 				0BCD53AA2643AE8100F6AE15 /* Info.plist */,
 				0BCD53AB2643AE8100F6AE15 /* ReturnOfTheMac.entitlements */,
@@ -261,7 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BCD53D02643B50A00F6AE15 /* SwitchView.swift in Sources */,
 				0BCD53A42643AE8000F6AE15 /* ContentView.swift in Sources */,
+				0BCD53CE2643B2EC00F6AE15 /* GridView.swift in Sources */,
 				0BCD53A22643AE8000F6AE15 /* ReturnOfTheMacApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

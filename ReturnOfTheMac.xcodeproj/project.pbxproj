@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,14 @@
 		0BCD53C02643AE8100F6AE15 /* ReturnOfTheMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCD53BF2643AE8100F6AE15 /* ReturnOfTheMacUITests.swift */; };
 		0BCD53CE2643B2EC00F6AE15 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCD53CD2643B2EC00F6AE15 /* GridView.swift */; };
 		0BCD53D02643B50A00F6AE15 /* SwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCD53CF2643B50A00F6AE15 /* SwitchView.swift */; };
+		527CBBB72649D0D400B95E4D /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527CBBB62649D0D400B95E4D /* URLImage.swift */; };
+		527CBBB92649D0EC00B95E4D /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527CBBB82649D0EC00B95E4D /* ImageLoader.swift */; };
+		52976CBD264A106200EC9275 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52976CBC264A106200EC9275 /* ListView.swift */; };
+		52C6B3812649BF8A006B5ECB /* Contentful in Frameworks */ = {isa = PBXBuildFile; productRef = 52C6B3802649BF8A006B5ECB /* Contentful */; };
+		52C6B38B2649C084006B5ECB /* GetProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C6B38A2649C084006B5ECB /* GetProducts.swift */; };
+		52C6B38D2649C120006B5ECB /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C6B38C2649C120006B5ECB /* Content.swift */; };
+		52C6B38F2649C2AA006B5ECB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C6B38E2649C2AA006B5ECB /* DetailView.swift */; };
+		52E33D86264A247A00AB02F3 /* Commando.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E33D85264A247A00AB02F3 /* Commando.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +58,13 @@
 		0BCD53C12643AE8100F6AE15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BCD53CD2643B2EC00F6AE15 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		0BCD53CF2643B50A00F6AE15 /* SwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchView.swift; sourceTree = "<group>"; };
+		527CBBB62649D0D400B95E4D /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
+		527CBBB82649D0EC00B95E4D /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		52976CBC264A106200EC9275 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		52C6B38A2649C084006B5ECB /* GetProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProducts.swift; sourceTree = "<group>"; };
+		52C6B38C2649C120006B5ECB /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		52C6B38E2649C2AA006B5ECB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		52E33D85264A247A00AB02F3 /* Commando.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commando.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C6B3812649BF8A006B5ECB /* Contentful in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,8 +116,15 @@
 		0BCD53A02643AE8000F6AE15 /* ReturnOfTheMac */ = {
 			isa = PBXGroup;
 			children = (
+				52C6B38C2649C120006B5ECB /* Content.swift */,
+				527CBBB62649D0D400B95E4D /* URLImage.swift */,
+				527CBBB82649D0EC00B95E4D /* ImageLoader.swift */,
+				52C6B38A2649C084006B5ECB /* GetProducts.swift */,
 				0BCD53A12643AE8000F6AE15 /* ReturnOfTheMacApp.swift */,
+				52E33D85264A247A00AB02F3 /* Commando.swift */,
 				0BCD53A32643AE8000F6AE15 /* ContentView.swift */,
+				52976CBC264A106200EC9275 /* ListView.swift */,
+				52C6B38E2649C2AA006B5ECB /* DetailView.swift */,
 				0BCD53CF2643B50A00F6AE15 /* SwitchView.swift */,
 				0BCD53CD2643B2EC00F6AE15 /* GridView.swift */,
 				0BCD53A52643AE8100F6AE15 /* Assets.xcassets */,
@@ -154,6 +177,9 @@
 			dependencies = (
 			);
 			name = ReturnOfTheMac;
+			packageProductDependencies = (
+				52C6B3802649BF8A006B5ECB /* Contentful */,
+			);
 			productName = ReturnOfTheMac;
 			productReference = 0BCD539E2643AE8000F6AE15 /* ReturnOfTheMac.app */;
 			productType = "com.apple.product-type.application";
@@ -225,6 +251,9 @@
 				Base,
 			);
 			mainGroup = 0BCD53952643AE8000F6AE15;
+			packageReferences = (
+				52C6B37F2649BF8A006B5ECB /* XCRemoteSwiftPackageReference "contentful" */,
+			);
 			productRefGroup = 0BCD539F2643AE8000F6AE15 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -268,9 +297,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BCD53D02643B50A00F6AE15 /* SwitchView.swift in Sources */,
+				52C6B38F2649C2AA006B5ECB /* DetailView.swift in Sources */,
+				52976CBD264A106200EC9275 /* ListView.swift in Sources */,
 				0BCD53A42643AE8000F6AE15 /* ContentView.swift in Sources */,
+				52C6B38D2649C120006B5ECB /* Content.swift in Sources */,
+				52E33D86264A247A00AB02F3 /* Commando.swift in Sources */,
 				0BCD53CE2643B2EC00F6AE15 /* GridView.swift in Sources */,
+				527CBBB92649D0EC00B95E4D /* ImageLoader.swift in Sources */,
+				52C6B38B2649C084006B5ECB /* GetProducts.swift in Sources */,
 				0BCD53A22643AE8000F6AE15 /* ReturnOfTheMacApp.swift in Sources */,
+				527CBBB72649D0D400B95E4D /* URLImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +465,7 @@
 				CODE_SIGN_ENTITLEMENTS = ReturnOfTheMac/ReturnOfTheMac.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"ReturnOfTheMac/Preview Content\"";
 				DEVELOPMENT_TEAM = 7EYVSUVBD6;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -439,7 +476,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.johncanelis.ReturnOfTheMac;
+				PRODUCT_BUNDLE_IDENTIFIER = com.johncanelis.TrackQueen2021;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -453,6 +490,7 @@
 				CODE_SIGN_ENTITLEMENTS = ReturnOfTheMac/ReturnOfTheMac.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"ReturnOfTheMac/Preview Content\"";
 				DEVELOPMENT_TEAM = 7EYVSUVBD6;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -463,7 +501,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.johncanelis.ReturnOfTheMac;
+				PRODUCT_BUNDLE_IDENTIFIER = com.johncanelis.TrackQueen2021;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -593,6 +631,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		52C6B37F2649BF8A006B5ECB /* XCRemoteSwiftPackageReference "contentful" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/contentful/contentful.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52C6B3802649BF8A006B5ECB /* Contentful */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52C6B37F2649BF8A006B5ECB /* XCRemoteSwiftPackageReference "contentful" */;
+			productName = Contentful;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0BCD53962643AE8000F6AE15 /* Project object */;
 }

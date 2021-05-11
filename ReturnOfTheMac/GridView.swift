@@ -21,14 +21,6 @@ struct GridView: View {
     }
 }
 
-struct CrazyView: View {
-    var body: some View {
-        Text("wiw nice")
-    }
-}
-
-
-
 struct GridView_Previews: PreviewProvider {
     static var previews: some View {
         GridView()

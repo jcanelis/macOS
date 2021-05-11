@@ -8,25 +8,19 @@
 import SwiftUI
 
 struct SwitchView: View {
+    
+    var url:URL!
+    
     var body: some View {
-        TabView {
-            
-            Text("First View")
-                .font(.title)
-                .tabItem({
-                    Image(systemName: "circle")
-                    Text("First")
-                })
-                .tag(0)
-            
-            Text("Second View")
-                .font(.title)
-                .tabItem({
-                    Image(systemName: "circle")
-                    Text("Second")
-                })
-                .tag(1)
+        
+        ScrollView {
+            URLImage(url: url!)
         }
+        .tabItem({
+            Image(systemName: "play.rectangle")
+            Text("Images")
+        })
+        .tag(0)
     }
 }
 

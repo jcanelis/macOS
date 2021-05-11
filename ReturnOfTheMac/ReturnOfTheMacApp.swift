@@ -13,5 +13,8 @@ struct ReturnOfTheMacApp: App {
         WindowGroup {
             ContentView()
         }
+        .commands {
+            Commando()
+        }
     }
 }

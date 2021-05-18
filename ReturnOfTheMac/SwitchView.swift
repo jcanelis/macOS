@@ -9,18 +9,23 @@ import SwiftUI
 
 struct SwitchView: View {
     
-    var url:URL!
+    var item: Product!
     
     var body: some View {
         
         ScrollView {
-            URLImage(url: url!)
+            ForEach(item.photos!, id: \.self) { photo in
+                URLImage(url: photo.url!)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .animation(.linear)
+            }
         }
         .tabItem({
             Image(systemName: "play.rectangle")
             Text("Images")
         })
         .tag(0)
+        
     }
 }
 

@@ -43,7 +43,8 @@ struct DetailView: View {
                 
             }
             
-            SwitchView(url: item.mainPhoto!.url!)
+//            SwitchView(url: item.mainPhoto!.url!)
+            SwitchView(item: item)
         }
         .padding(.all, 24.0)
         .sheet(isPresented: $showingModal) {

@@ -1,2 +1,2 @@
 # macOS
-Building a macOS app.
+Exploring SwiftUI and building a macOS app.

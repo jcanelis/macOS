@@ -22,7 +22,14 @@ struct DetailView: View {
         NavigationView {
             ScrollView {
                 
-                URLImage(url: item.mainPhoto!.url!, placeholder: "photo")
+                AsyncImage(url: item.mainPhoto!.url!) { image in
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                } placeholder: {
+                    Color("Grey")
+                }
+                .frame(width: 400.0, height: 400.0)
                 
                 Button("wowza") {
                     showingModal.toggle()
@@ -43,13 +50,20 @@ struct DetailView: View {
                 
             }
             
-//            SwitchView(url: item.mainPhoto!.url!)
             SwitchView(item: item)
         }
         .padding(.all, 24.0)
         .sheet(isPresented: $showingModal) {
             VStack {
-                URLImage(url: item.mainPhoto!.url!, placeholder: "photo")
+                AsyncImage(url: item.mainPhoto!.url!) { image in
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                } placeholder: {
+                    Color("Grey")
+                }
+                .frame(width: 200.0, height: 200.0)
+                
                 Button("Add to Cart") {
                     showingModal.toggle()
                 }

@@ -12,12 +12,15 @@ struct SwitchView: View {
     var item: Product!
     
     var body: some View {
-        
         ScrollView {
             ForEach(item.photos!, id: \.self) { photo in
-                URLImage(url: photo.url!)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .animation(.linear)
+                AsyncImage(url: photo.url!) { image in
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                } placeholder: {
+                    Color("Grey")
+                }
             }
         }
         .tabItem({
@@ -25,7 +28,6 @@ struct SwitchView: View {
             Text("Images")
         })
         .tag(0)
-        
     }
 }
 

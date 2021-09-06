@@ -15,7 +15,6 @@
 		0BCD53C02643AE8100F6AE15 /* ReturnOfTheMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCD53BF2643AE8100F6AE15 /* ReturnOfTheMacUITests.swift */; };
 		0BCD53CE2643B2EC00F6AE15 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCD53CD2643B2EC00F6AE15 /* GridView.swift */; };
 		0BCD53D02643B50A00F6AE15 /* SwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCD53CF2643B50A00F6AE15 /* SwitchView.swift */; };
-		527CBBB72649D0D400B95E4D /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527CBBB62649D0D400B95E4D /* URLImage.swift */; };
 		527CBBB92649D0EC00B95E4D /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527CBBB82649D0EC00B95E4D /* ImageLoader.swift */; };
 		52976CBD264A106200EC9275 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52976CBC264A106200EC9275 /* ListView.swift */; };
 		52C6B3812649BF8A006B5ECB /* Contentful in Frameworks */ = {isa = PBXBuildFile; productRef = 52C6B3802649BF8A006B5ECB /* Contentful */; };
@@ -58,7 +57,6 @@
 		0BCD53C12643AE8100F6AE15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BCD53CD2643B2EC00F6AE15 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		0BCD53CF2643B50A00F6AE15 /* SwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchView.swift; sourceTree = "<group>"; };
-		527CBBB62649D0D400B95E4D /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
 		527CBBB82649D0EC00B95E4D /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		52976CBC264A106200EC9275 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		52C6B38A2649C084006B5ECB /* GetProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProducts.swift; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				52C6B38C2649C120006B5ECB /* Content.swift */,
-				527CBBB62649D0D400B95E4D /* URLImage.swift */,
 				527CBBB82649D0EC00B95E4D /* ImageLoader.swift */,
 				52C6B38A2649C084006B5ECB /* GetProducts.swift */,
 				0BCD53A12643AE8000F6AE15 /* ReturnOfTheMacApp.swift */,
@@ -306,7 +303,6 @@
 				527CBBB92649D0EC00B95E4D /* ImageLoader.swift in Sources */,
 				52C6B38B2649C084006B5ECB /* GetProducts.swift in Sources */,
 				0BCD53A22643AE8000F6AE15 /* ReturnOfTheMacApp.swift in Sources */,
-				527CBBB72649D0D400B95E4D /* URLImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -448,7 +444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -476,7 +472,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.johncanelis.TrackQueen2021;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -503,7 +499,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.johncanelis.TrackQueen2021;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -525,7 +521,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.johncanelis.ReturnOfTheMacTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -547,7 +543,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.johncanelis.ReturnOfTheMacTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

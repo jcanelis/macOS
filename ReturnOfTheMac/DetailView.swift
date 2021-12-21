@@ -35,6 +35,8 @@ struct DetailView: View {
                     showingModal.toggle()
                 }
                 
+                Text("This a new build")
+                
                 Text("\(item.price!)")
                     .font(.largeTitle)
                     .fontWeight(.bold)
